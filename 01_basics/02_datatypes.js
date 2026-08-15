@@ -12,7 +12,7 @@ let state;
 // bigint
 // string => ""
 // boolean => true/false
-// null => standalone value
+// null => standalone value   ==> object
 // undefined =>  
 // symbol => unique
 
