@@ -99,5 +99,32 @@ let gameCounter = 100
 // console.log(gameCounter);
 
 
-console.log("1"+9+2);
-console.log(1+9+"1");
+// console.log("1"+9+2);
+// console.log(1+9+"1");
+
+// *******************************************
+
+// console.log(2 > 1);
+// console.log(2 >= 1);
+// console.log(2 < 1);
+// console.log(2 == 1);
+// console.log(2 != 1);
+
+
+// console.log("2" > 1);
+// console.log("02" > 1);
+
+// console.log(null > 0);
+// console.log(null == 0);
+// console.log(null >= 0); // js null is converting into 0
+
+
+// console.log(undefined == 0);
+// console.log(undefined > 0);
+// console.log(undefined >= 0);
+// console.log(undefined < 0);
+
+// === 'will check values'
+console.log("2" === 2);
+
+
