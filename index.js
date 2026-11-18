@@ -1,63 +1,85 @@
-// DELETEALL
+// let arr = [1,2,3,4,5,undefined, , undefined]
+// let newarr = []
 
-// fetch("http://localhost:3000/products")
-// .then((response) => response.json())
-// .then(data => console.log(data))
+// for(i=0;i<arr.length;i++){
+//     console.log(arr[i]);
+// }
+
+// arr.forEach((ele)=>console.log(ele));
 
 
-// const URL = "http://localhost:3000/products";
+// let arr = ["html", "css","javascript","react.js"]
+// let newarr = []
 
-// fetch(URL)
-// .then(res => res.json())
-// .then(data =>{
-//     for(i = 0;i<data.length;i++){
-//         fetch(`http://localhost:3000/products/${data[i].id}`,{"method" : "DELETE"})
+// for(i=0;i<arr.length;i++){
+//     newarr.push(arr[i].toUpperCase())
+// }
+// console.log(newarr);
 
-//             .then(res => {
-//                 if(res.ok){
-//                     console.log(res.ok, res.status, res.statusText)
-//                 }
-//             }
-//         )
+// arr.forEach(ele=>{
+//     newarr.push(ele.toUpperCase())
+// })
+// console.log(newarr);
+
+
+
+
+
+
+
+// let nums = [1,2,3,4,5]
+// let result = []
+
+// nums.forEach(ele=>result.push(ele*ele))
+// console.log(result);
+
+// for(i=0;i<nums.length;i++){
+//     result.push(nums[i] * nums[i])
+// }
+// console.log(result);
+
+
+// let result = nums.map(ele=>ele*ele)
+// console.log(result);
+
+
+
+
+// let arr = [2,4,6,8,10]
+// let newarr = arr.filter(ele=>ele %2==0)
+// console.log(newarr);
+
+
+
+// let nums = [
+//     {"id" : "1"},
+//     {"id" : "2"},
+//     {"id" : "3"},
+//     {"id" : "4"}
+// ]
+
+// nums.forEach(ele=>console.log(ele));
+
+
+// fetch("https://fakestoreapi.com/products")
+// .then(
+//     res=>{
+//         if(!res.ok){
+//             console.log("something wentt wrong");
+//         }
+//         return res.json();
 //     }
+// )
+
+// .then(data=>{
+//     data.forEach((Element, index, arr)=>{
+//         console.log(Element);
+        
+//     })
 // })
 
-
-
-// POSTALL
-
-let data =[
-    {
-        "id" : "1",
-        "name" : "raju"
-    }, 
-    {
-        "id" : "2",
-        "name" : "somu"
-    }, 
-    {
-        "id" : "3",
-        "name" : "ramu"
-    }, 
-    {
-        "id" : "4",
-        "name" : "tinu"
-    }
-]
-
-for(i=0;i<=data.length;i++){
-    let obj = data[i];
-
-    fetch("http://localhost:3000/products",{
-        "method" : "POST",
-        "headers" :{
-            "content-type" : "application/json"
-        },
-        "body" : JSON.stringify(obj)
-   })
-   .then(res => {
-    if(res.ok){
-        console.log(res.ok, res.status, res.statusText)
-    }
-   })
-}
+// .then(data=>{
+//     let res = data.map(ele=>ele);
+//     console.log(res);
+    
+// })
